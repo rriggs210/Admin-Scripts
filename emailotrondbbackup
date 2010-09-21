@@ -1,0 +1,6 @@
+#!/bin/bash
+/vol/bin/mysql_backup emailotron /vol/mysqlbak/emot
+/vol/bin/mysql_backup mysql /vol/mysqlbak/mysql
+/vol/bin/mysql_backup emailotron_data /vol/mysqlbak/mysql
+/vol/bin/mysql_backup --skip-lock-tables emailotron_data /vol/mysqlbak/mysql
+
